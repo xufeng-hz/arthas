@@ -95,11 +95,11 @@
                         <phase>package</phase>
                         <configuration>
                             <tasks>
-                                <unzip src="${project.build.directory}/${project.build.finalName}-shade.${project.packaging}" dest="${project.build.directory}/tmp_out" />
+                                <unzip src="${project.build.directory}/${project.build.finalName}-shade.${project.packaging}" dest="${project.build.directory}/tmp_out"/>
                                 <copy overwrite="true" todir="${project.build.directory}/tmp_out/com/taobao/arthas/core/command/logger">
-                                    <fileset dir="${project.build.directory}/classes/com/taobao/arthas/core/command/logger" />
+                                    <fileset dir="${project.build.directory}/classes/com/taobao/arthas/core/command/logger"/>
                                 </copy>
-                                <zip basedir="${project.build.directory}/tmp_out" destfile="${project.build.directory}/${project.build.finalName}-shade.${project.packaging}" />
+                                <zip basedir="${project.build.directory}/tmp_out" destfile="${project.build.directory}/${project.build.finalName}-shade.${project.packaging}"/>
                             </tasks>
                         </configuration>
                         <goals>
@@ -205,7 +205,7 @@
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.12.4</version>
+            <version>2.17.2</version>
             <scope>provided</scope>
             <optional>true</optional>
         </dependency>
