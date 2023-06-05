@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:11.0.15-slim
 
 ARG ARTHAS_VERSION="3.6.6"
 ARG MIRROR=false
